@@ -1,0 +1,124 @@
+{
+"ChangeOwnershipMainDialog": {
+        "retry_one": "Uy, no te entendí. 🤔\n\n👆 Para que pueda ayudarte, tenés que elegir una opción del menú",
+        "retry_two": "Uy, no entendí lo que me quisiste decir. 🤔\n\nEscribí *_‘Cambio de titularidad’_* para volver a intentar.\n\n❓ Si no, contame cuál es tu consulta usando *frases cortas*, o escribí *_'Menú'_* para ver los temas en los que te puedo asistir.",
+        "question_body": "Bien, te voy a ayudar con el cambio de titularidad. Elegí la opción sobre la que querés hacer el cambio 👇:",
+        "actions": [
+            {
+                "title": "Linea celular",
+                "value": "linea_celular"
+            },
+            {
+                "title": "Linea fija",
+                "value": "linea_fija"
+            }
+        ],
+        "action_ids" : {
+            "cancel_from_button_list_dialog":{
+                "response": "",
+                "go_to_dialog_id": "CancelFromButtonListDialog"
+            },
+            "linea_celular":{
+                "response": "",
+                "go_to_dialog_id": "CellphoneLineDialog"
+            },
+            "linea_fija":{
+                "response": "NO hay problema...",
+                "go_to_dialog_id": "LandlineDialog"
+            }
+        },
+        "childrens": {
+            "CellphoneLineDialog": {
+                "retry_one": "Uy, no te entendí. 🤔\n\n👆 Para que pueda ayudarte, tenés que elegir una opción del menú",
+                "retry_two": "Uy, no entendí lo que me quisiste decir. 🤔\n\nEscribí *_‘Cambio de titularidad’_* para volver a intentar.\n\n❓ Si no, contame cuál es tu consulta usando *frases cortas*, o escribí *_'Menú'_* para ver los temas en los que te puedo asistir.",
+                "question_body": "Para *cambiar la titularidad* de una línea móvil vamos a necesitar:\n\n✔️Fotos de frente y dorso del DNI del titular actual y del nuevo titular.\n📷 Asegurate de tener buena luz.\n✔️ Una selfie del titular actual y una del nuevo titular, los dos con el DNI en la mano.\n*¡Es importante que se les vea bien la cara!* 🤳\n✔️ Una copia de este formulario completo y firmado por el titular actual, y otra copia por el nuevo titular. Descargalo desde acá http://mov.is/sgZZ 👈.\n\n⚠️ Acordate de que para hacer el cambio de titularidad, la línea *no tiene que tener deuda*.\n\nSi tenés todos los datos que necesitamos, ¿querés hacer el cambio de titularidad ahora?",
+                "actions": [
+                    {
+                        "title": "Si, empecemos",
+                        "value": "empecemos"
+                    },
+                    {
+                        "title": "No, en otro momento",
+                        "value": "no_en_otro_momento"
+                    }
+                ],
+                "action_ids": {
+                    "empecemos": {
+                        "response": "Para ayudarte con tu consulta voy a conectarte con una persona especializada.\n\nTe voy a avisar por acá cuando esté todo listo para atenderte. 👌",
+                        "go_to_dialog_id": ""
+                    },
+                    "no_en_otro_momento": {
+                        "response": "No hay problema, lo dejamos para otro momento. 🙂\n\n❗ Recordá que para hacer la operación tenés que tener la documentación lista.\n\n¿Te puedo ayudar con algo más? Escribí *_’Menú’_* y te cuento en qué más puedo asistirte.",
+                        "go_to_dialog_id": ""
+                    },
+                    "cancel_from_button_list_dialog":{
+                        "response": "",
+                        "go_to_dialog_id": "CancelFromButtonListDialog"
+                    }
+                }
+            },
+            "LandlineDialog": {
+                "retry_one": "Uy, no te entendí. 🤔\n\n👆 Para que pueda ayudarte, tenés que elegir una opción del menú",
+                "retry_two": "Uy, no entendí lo que me quisiste decir. 🤔\n\nEscribí *_‘Cambio de titularidad’_* para volver a intentar.\n\n❓ Si no, contame cuál es tu consulta usando *frases cortas*, o escribí *_'Menú'_* para ver los temas en los que te puedo asistir.",
+                "question_body": "Primero, necesito saber si sos el titular de la línea. Elegí la opción que te identifique 👇:",
+                "actions": [
+                    {
+                        "title": "Soy el titular",
+                        "value": "soy_titular"
+                    },
+                    {
+                        "title": "No soy el titular",
+                        "value": "no_soy_titular"
+                    }
+                ],
+                "action_ids": {
+                    "soy_titular": {
+                        "response": "Bien, te voy a contactar con una persona especializada para que te pueda ayudar con el *cambio de titularidad* de la línea fija.\n\nTe voy a avisar cuando esté todo listo para atenderte. 👌",
+                        "go_to_dialog_id": ""
+                    },
+                    "no_soy_titular": {
+                        "response": "",
+                        "go_to_dialog_id": "LandlineNotOwnerDialog"
+                    },
+                    "cancel_from_button_list_dialog":{
+                        "response": "",
+                        "go_to_dialog_id": "CancelFromButtonListDialog"
+                    }
+                }
+            },
+            "LandlineNotOwnerDialog": {
+                "retry_one": "Uy, no te entendí. 🤔\n\n👆 Para que pueda ayudarte, tenés que elegir una opción del menú",
+                "retry_two": "Uy, no entendí lo que me quisiste decir. 🤔\n\nEscribí *_‘Cambio de titularidad’_* para volver a intentar.\n\n❓ Si no, contame cuál es tu consulta usando *frases cortas*, o escribí *_'Menú'_* para ver los temas en los que te puedo asistir.",
+                "question_body": "Para hacer el *cambio de titularidad* de una línea fija, necesito que tengas a mano:\n\n✅ El nombre completo y DNI del titular actual.\n✅ Una factura reciente.\n\n📃Podés ver tu factura desde la *app Mi Movistar*: http://mov.is/sjMB 👈.\n\n¿Querés hacer el cambio de titularidad ahora?",
+                "actions": [
+                    {
+                        "title": "Si",
+                        "value": "realizar_cambio"
+                    },
+                    {
+                        "title": "No, mejor en otro momento",
+                        "value": "otro_momento"
+                    }
+                ],
+                "action_ids": {
+                    "realizar_cambio": {
+                        "response": "Perfecto 👌. Voy a contactarte con una persona especializada para que pueda ayudarte a hacer el *cambio de titularidad*.\n\nCuando esté todo listo para atenderte te voy a avisar por acá.",
+                        "go_to_dialog_id": ""
+                    },
+                    "otro_momento": {
+                        "response": "No hay problema, lo dejamos para otro momento. 😊\n\n❗ Acordate de tener lista *la factura y los datos del titular actual* para poder hacer el cambio.\n\n¿Te puedo ayudar con otra cosa? Contame tu consulta usando *frases cortas*, o escribí *_’Menú’_* para que te muestre más cosas en las que te puedo asistir.",
+                        "go_to_dialog_id": ""
+                    },
+                    "cancel_from_button_list_dialog":{
+                        "response": "",
+                        "go_to_dialog_id": "CancelFromButtonListDialog"
+                    }
+                }
+            }          
+        }
+    },
+    "CancelFromButtonListDialog": {
+        "response": "¿Querés consultarme por otra cosa? Escribime con *frases cortas* que las entiendo mejor.\n\n❓ Si no, escribí *_’Menú’_* para que te cuente más cosas en las que te puedo ayudar."
+    }
+}    
+    
